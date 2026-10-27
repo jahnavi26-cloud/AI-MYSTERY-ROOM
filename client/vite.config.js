@@ -3,6 +3,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
+  base: '/AI-MYSTERY-ROOM/',
   root: fileURLToPath(new URL('.', import.meta.url)),
   plugins: [react()],
   server: {
