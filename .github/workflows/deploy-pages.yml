@@ -29,6 +29,8 @@ jobs:
         run: npm ci
       - name: Build site
         run: npm run build
+        env:
+          VITE_API_BASE_URL: https://ai-mystery-room-vy2z.onrender.com/api
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
